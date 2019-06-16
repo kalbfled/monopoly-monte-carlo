@@ -6,6 +6,9 @@ Developed and tested with GHC 8.6.5.
 
 ## Branches
 * master - All players start with equal assets
+* double_money_first - The first player starts with twice as much money as the other players
+* double_money_last - The last player starts with twice as much money as the other players
+* last_baltic - The last player starts with Baltic Avenue
 
 ## Strategy
 All players follow a simple, hard-coded strategy.  An open question is if a player following an optimal
