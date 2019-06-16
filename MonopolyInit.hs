@@ -19,8 +19,7 @@ initialMoney = 1500  -- $1,500
 
 
 initPlayers :: Int -> Players
--- Each player: (Go, initialMoney, no properties owned)
-initPlayers num_players = replicate num_players (go, initialMoney, IntSet.empty :: Properties)
+initPlayers num_players = (replicate (num_players - 1) (go, initialMoney, IntSet.empty :: Properties)) ++ [(go, initialMoney, IntSet.singleton 3)]
 
 
 initRealEstate :: RealEstate
