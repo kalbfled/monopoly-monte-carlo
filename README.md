@@ -30,5 +30,5 @@ improvements to the former first as long as room for improvements remains.
 
 ## Turns Limit
 Without the posibility of players making deals, [Monopoly games can last indefinitely](https://www.informs-sim.org/wsc09papers/036.pdf).
-To mitigate this infinite loop condition, a game is abondoned when there is no winner after each player has taken 20,000 turns.  The
+To mitigate this infinite loop condition, a game is abandoned when there is no winner after each player has taken 20,000 turns.  The
 simulation continues until completing the user-specified number of games.
