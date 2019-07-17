@@ -19,7 +19,6 @@ module Monopoly (
     getPurchasePrice,
     getRentDue,
     incomeTax,
-    initRealEstate,
     jail,
     justVisiting,
     luxuryTax,
@@ -135,7 +134,7 @@ winnerIndex :: Players -> Maybe Int
 -- Return the index of the winner, if any.  Otherwise, return Nothing.  There is a winner if only one player has non-negative money.
 winnerIndex players
     | solvent_count == 1 = Just (head solvent_players)  -- We have a winner.
-    | solvent_count > 1 = Nothing -- Multiple players are still in the game; no winner yet.
+    | solvent_count > 1 = Nothing                       -- Multiple players are still in the game; no winner yet.
     where solvent_players = List.findIndices (\(_, money, _) -> money >= 0) players
           solvent_count = length solvent_players
 
